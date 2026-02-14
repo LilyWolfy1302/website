@@ -7,12 +7,12 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navList = [
-    { name: "Hækkeklipning", href: "#haek" },
-    { name: "Japanske beskæringskunst", href: "#beskaering" },
-    { name: "Beskæring & Fældning", href: "#grass" },
-    { name: "Tagrenderensning", href: "#haek" },
-    { name: "Lugning", href: "#haek" },
-    { name: "Græsslåning", href: "#haek" },
+    { name: "Hækkeklipning", href: "/hækkeklipning" },
+    { name: "Japanske beskæringskunst", href: "/beskæringskunst" },
+    { name: "Beskæring & Fældning", href: "/beskaering-faeldning" },
+    { name: "Tagrenderensning", href: "/tagrenderensning" },
+    { name: "Lugning", href: "/lugning" },
+    { name: "Græsslåning", href: "/Græsslåning" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function Header() {
 
             <div className={styles.dropdownMenu}>
               {navList.map((item, index) => (
-                <Link key={index} to={`/services${item.href}`}>
+                <Link key={index} to={`/services/${item.href}`}>
                   {item.name}
                 </Link>
               ))}

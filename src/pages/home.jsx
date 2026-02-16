@@ -8,9 +8,11 @@ import leaf1 from "../assets/leaf1.png"
 import instagram from "../assets/instagram.png";
 import { socialLinks } from "../config";
 import { servicesTimes } from "../config";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Home() {
+  const navigate = useNavigate();
   return (
     <div className={styles.page}>
       <div className={styles.container}>
@@ -29,27 +31,27 @@ export default function Home() {
             <div className={styles.listBox}>
               <h3>Havemand til alle dine behov</h3>
               <ul>
-                <div>
+                <div onClick={() => navigate("/services/hækkeklipning")}>
                     <img src={checkMark} alt="Checkmark" />
                     <span>Hækkeklipning</span>
                 </div>
-                <div>
+                <div onClick={() => navigate("/services/japanske-beskæringskunst")}>
                     <img src={checkMark} alt="Checkmark" />
                     <span>Japanske beskæringskunst</span>
                 </div>
-                <div>
+                <div onClick={() => navigate("/services/beskaering-faeldning")}>
                     <img src={checkMark} alt="Checkmark" /> 
                     <span>Beskæring & Fældning</span>
                 </div>
-                <div>
+                <div  onClick={() => navigate("/services/tagrenderensning")}>
                     <img src={checkMark} alt="Checkmark" />
                     <span>Tagrenderensning</span>
                 </div>
-                <div>
+                <div  onClick={() => navigate("/services/lugning")}>
                     <img src={checkMark} alt="Checkmark" />
                     <span>Lugning</span>
                 </div>
-                <div>
+                <div onClick={() => navigate("/services/graesslaening")}>
                     <img src={checkMark} alt="Checkmark" />
                     <span>Græsslåning</span>
                 </div>
@@ -72,7 +74,7 @@ export default function Home() {
             <img className={styles.logoBigImg} src={logo} alt="Logo" />
           </div>
 
-          <div>
+          <div className={styles.textContent}>
             <div className={styles.textBlock}>
               <h2>Tryghed og faste aftaler</h2>
               <p>
@@ -119,10 +121,10 @@ export default function Home() {
             <strong>FØLG MIG</strong>
             <div className={styles.socialRow}>
               <div className={styles.socialBtn} onClick={() => window.open(socialLinks[0].url, "_blank")}>
-                <img src={facebook} alt="Facebook" style={{width: "50px", height:"40px"}}/>
+                <img src={facebook} alt="Facebook" style={{width: "100%", height:"100%"}}/>
               </div>
               <div className={styles.socialBtn} onClick={() => window.open(socialLinks[1].url, "_blank")}>
-                <img src={instagram} alt="Instagram" style={{width: "45px", height:"45px"}}/>
+                <img src={instagram} alt="Instagram" style={{width: "100%", height:"100%"}}/>
               </div>
             </div>
           </div>

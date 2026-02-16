@@ -12,7 +12,7 @@ import Lugning from "./pages/lugning";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/website">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

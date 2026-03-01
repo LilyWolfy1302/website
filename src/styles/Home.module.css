@@ -249,6 +249,7 @@ html, body {
   background: linear-gradient(135deg, #d5ab4b 0%, #c99b3d 100%);
   color: #1a1a1a;
   box-shadow: 0 4px 20px rgba(213, 171, 75, 0.35);
+  cursor: pointer;
 }
 
 .btnGold:hover {

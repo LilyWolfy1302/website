@@ -72,3 +72,13 @@
 }
 
 
+.phoneLink {
+  color: white;
+  text-decoration: none;
+  padding-left: 5px;
+  transition: text-decoration 0.2s, opacity 0.2s;
+}
+.phoneLink:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}

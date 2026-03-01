@@ -2,6 +2,8 @@ import Header from "../components/header";
 import styles from "../styles/Services.module.css";
 import { Link } from "react-router-dom";
 
+import Footer from "../components/footer";
+
 // Import images
 import haekkeklipningImg from "../assets/images/hækkeklipning-hero.jpg";
 import beskaeringskunstImg from "../assets/images/beskaeringskunst-hero.jpg";
@@ -30,7 +32,7 @@ const services = [
     title: "Beskæring & Fældning",
     description: "Professionel beskæring og fældning af træer.",
     image: beskaerningFaeldningImg,
-    link: "/beskaeringFaeldning"
+    link: "/beskaering-faeldning"
   },
   {
     id: "tagrenderensning",
@@ -81,6 +83,7 @@ export default function Services() {
           ))}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

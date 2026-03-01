@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className={styles.footerInner}>
                   <div style={{flex:1}}>
                     <strong>Niwa Haveservice</strong>
-                    <p>Tlf: +45 20141929</p>
+                    <a className={styles.phoneLink} href="tel:+4520141929">Tlf: +45 20141929</a>
                     <p>CVR: 46160568</p>
                     <p>
                         Email: 

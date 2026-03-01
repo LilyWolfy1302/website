@@ -89,7 +89,7 @@
 /* Hide dropdown by default */
 .dropdownMenu {
   position: absolute;
-  top: 18px;
+  top: 30px;
   left: 0;
   background: white;
   min-width: 280px;

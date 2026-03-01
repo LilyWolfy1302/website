@@ -8,6 +8,7 @@ import leaf1 from "../assets/leaf1.png"
 import instagram from "../assets/instagram.png";
 import { socialLinks } from "../config";
 import { servicesTimes } from "../config";
+import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
 
 
@@ -29,12 +30,12 @@ export default function Home() {
             
             {/* Left content */}
             <div className={styles.heroLeft}>
-              <span className={styles.heroBadge}>Professionel Haveservice</span>
+              <span className={styles.heroBadge}>Din faglige haveservice</span>
               <h1>Hjælp til havearbejde?</h1>
               <p className={styles.heroTagline}>- En have der føles tryg og rar -</p>
               <div className={styles.heroStats}>
                 <div className={styles.statItem}>
-                  <span className={styles.statNumber}>10+</span>
+                  <span className={styles.statNumber}>5+</span>
                   <span className={styles.statLabel}>Års erfaring</span>
                 </div>
                 <div className={styles.statItem}>
@@ -75,8 +76,8 @@ export default function Home() {
               </ul>
 
               <a
-                href="#contact"
                 className={`${styles.btn} ${styles.btnGold}`}
+                onClick={() => navigate("/contact")}
               >
                 KONTAKT MIG →
               </a>
@@ -117,46 +118,9 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className={styles.footer}>
-        <div className={styles.footerInner}>
-          <div style={{flex:1}}>
-            <strong>Niwa Haveservice</strong>
-            <p>Tlf: +45 20141929</p>
-            <p>CVR: 46160568</p>
-            <p>
-                Email: 
-                <a className={styles.emailLink} href="mailto:Niwahaveservice@gmail.com">
-                    Niwahaveservice@gmail.com
-                </a>
-            </p>
-
-
-          </div>
-
-          <div style={{flex:1, display:"flex", flexDirection:"column", alignItems:"center"}}>
-            <strong>FØLG MIG</strong>
-            <div className={styles.socialRow}>
-              <div className={styles.socialBtn} onClick={() => window.open(socialLinks[0].url, "_blank")}>
-                <img src={facebook} alt="Facebook" style={{width: "100%", height:"100%"}}/>
-              </div>
-              <div className={styles.socialBtn} onClick={() => window.open(socialLinks[1].url, "_blank")}>
-                <img src={instagram} alt="Instagram" style={{width: "100%", height:"100%"}}/>
-              </div>
-            </div>
-          </div>
-
-          <div className={styles.footerLinks}>
-                <p style={{textAlign:"end", fontWeight:"bold", fontSize:"22px", margin:0,}}>Telefontid:</p>
-                {servicesTimes.map((item, index) => (
-                    <div key={index} className={styles.footerLink}>
-                        <span>{item.dag}</span>
-                        <span style={{paddingLeft:"8px"}}>{item.tid}</span>
-                    </div>
-                ))}
-            </div>
-        </div>
-        <p style={{textAlign:"center", margin:0}}>© 2026 Niwa Haveservice · CVR: 46160568</p>
-      </footer>
+      <div className={styles.footerWrapper}>
+        <Footer />
+      </div>
     </div>
   );
 }

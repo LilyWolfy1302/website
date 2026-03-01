@@ -39,9 +39,9 @@ export default function About() {
               </p>
             </div>
               <div className={styles.ctaRow}>
-              <Link className={styles.cta} to="/contact">
+              <a className={styles.cta} href="tel:20141929">
                 Ring til mig
-              </Link>
+              </a>
             </div>
           </div>
 

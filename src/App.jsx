@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Services from "./pages/services";
@@ -12,7 +12,7 @@ import Lugning from "./pages/lugning";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -25,6 +25,6 @@ export default function App() {
         <Route path="/services/græsslåning" element={<Graesslaaning />} />
         <Route path="/services/lugning" element={<Lugning />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

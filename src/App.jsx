@@ -5,14 +5,14 @@ import Services from "./pages/services";
 import Contact from "./pages/contact";
 import Hækkeklipning from "./pages/hækkeklipning";
 import Beskaeringskunst from "./pages/beskæringkunst";
-import BeskaeringFaeldning from "./pages/BeskaeringFaeldning";
-import Tagrenderensning from "./pages/Tagrenderensning";
+import BeskaeringFaeldning from "./pages/beskaeringFaeldning";
+import Tagrenderensning from "./pages/tagrenderensning";
 import Graesslaaning from "./pages/græsslåning";
 import Lugning from "./pages/lugning";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/website">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

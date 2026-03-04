@@ -12,7 +12,7 @@ export default function Footer() {
     return(
         <footer className={styles.footer}>
                 <div className={styles.footerInner}>
-                  <div style={{flex:1}}>
+                  <div className={styles.contactSection}>
                     <strong>Niwa Haveservice</strong>
                     <a className={styles.phoneLink} href="tel:+4520141929">Tlf: +45 20141929</a>
                     <p>CVR: 46160568</p>
@@ -22,11 +22,9 @@ export default function Footer() {
                             Niwahaveservice@gmail.com
                         </a>
                     </p>
-        
-        
                   </div>
         
-                  <div style={{flex:1, display:"flex", flexDirection:"column", alignItems:"center"}}>
+                  <div className={styles.socialSection}>
                     <strong>FØLG MIG</strong>
                     <div className={styles.socialRow}>
                       <div className={styles.socialBtn} onClick={() => window.open(socialLinks[0].url, "_blank")}>
@@ -39,7 +37,7 @@ export default function Footer() {
                   </div>
         
                   <div className={styles.footerLinks}>
-                        <p style={{textAlign:"end", fontWeight:"bold", fontSize:"22px", margin:0,}}>Telefontid:</p>
+                        <p className={styles.hoursTitle}>Telefontid:</p>
                         {servicesTimes.map((item, index) => (
                             <div key={index} className={styles.footerLink}>
                                 <span>{item.dag}</span>
@@ -48,7 +46,7 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
-                <p style={{textAlign:"center", margin:0}}>© 2026 Niwa Haveservice · CVR: 46160568</p>
+                <p style={{textAlign:"center", margin:0,marginTop:"12px"}}>© 2026 Niwa Haveservice · CVR: 46160568</p>
               </footer>
     )
 }

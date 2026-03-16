@@ -74,3 +74,56 @@
   text-decoration: underline;
   opacity: 0.8;
 }
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 80px;
+  }
+
+  .container {
+    margin-top: 40px;
+    padding: 15px;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .left {
+    order: 2;
+  }
+
+  .right {
+    order: 1;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .name {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .info {
+    font-size: 16px;
+    margin-bottom: 15px;
+    word-break: break-word;
+  }
+
+  .helpText {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .image {
+    width: 150px;
+    height: 150px;
+  }
+}

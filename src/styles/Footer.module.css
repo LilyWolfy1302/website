@@ -20,6 +20,24 @@
   margin-bottom: 10px;
 }
 
+.contactSection {
+  flex: 1;
+}
+
+.socialSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hoursTitle {
+  text-align: end;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0;
+}
+
 .socialRow {
   display: flex;
   gap: 18px;
@@ -81,4 +99,53 @@
 .phoneLink:hover {
   text-decoration: underline;
   opacity: 0.8;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footerInner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footerInner > div {
+    flex: none !important;
+    width: 100%;
+    align-items: center !important;
+  }
+
+  .footerLinks {
+    align-items: center;
+  }
+
+  .footerLinks p {
+    text-align: center !important;
+  }
+
+  .hoursTitle {
+    text-align: center;
+  }
+
+  .contactSection {
+    flex: none;
+  }
+
+  .socialSection {
+    flex: none;
+  }
+
+  .footerLink {
+    justify-content: center;
+  }
+
+  .socialRow {
+    justify-content: center;
+  }
 }

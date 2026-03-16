@@ -48,7 +48,7 @@ export default function Footer() {
                         ))}
                     </div>
                 </div>
-                <p style={{textAlign:"center", margin:0}}>© 2026 Niwa Haveservice · CVR: 46160568</p>
+                <p style={{textAlign:"center", margin:0, marginTop:"12px"}}>© 2026 Niwa Haveservice · CVR: 46160568</p>
               </footer>
     )
 }

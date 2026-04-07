@@ -48,6 +48,10 @@ export default function Home() {
             {/* Right service box */}
             <div className={styles.listBox}>
               <h3>Havemand til alle dine behov</h3>
+              <div className={styles.pricingSection}>
+                <span className={styles.pricingLabel}>Pris</span>
+                <p className={styles.pricingValue}>550 kr inkl. Moms.</p>
+              </div>
               <ul>
                 <div onClick={() => navigate("/services/hækkeklipning")}>
                     <img src={checkMark} alt="Checkmark" />

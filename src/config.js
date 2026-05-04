@@ -11,5 +11,5 @@ export const socialLinks = [
   
 
 export const servicesTimes = [
-  {dag: "Alle dage:", tid: "16:00 - 22:00"},
+  {dag: "Alle dage:", tid: "13:00 - 19:00"},
 ]
